@@ -1,11 +1,10 @@
 (function(module) {
   var zip = {};
 
-  getData = function() {
+  function getData() {
     $.getJSON('/data/manhattan.json', function(data) {
-      // TODO: start here!
-    });
-  };
+      // Start here  :-)
+  }
 
   getData();
   module.zip = zip;

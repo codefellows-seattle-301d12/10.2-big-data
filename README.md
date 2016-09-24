@@ -11,7 +11,7 @@ Start simple:
 Transform the initial collection into
 an array of each object's properties.
 
-We first want to pick up on only a few properties, therefore, you may need to build these objects out dynamically with just the following properties:
+We first want to pick up on only a few properties, therefore, you may need to build these objects out dynamically (perhaps with map?) with just the following properties:
 
 The zip code
 Its neighborhood
