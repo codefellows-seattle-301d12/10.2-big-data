@@ -28,7 +28,10 @@
           }
           return acc;
         }, []);
-        console.log(test);
+        return {
+          neighborhood: uniqueHood,
+          totalZips: test
+        };
       });
       console.log(zipArray);
     });
