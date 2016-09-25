@@ -21,6 +21,16 @@
         return acc;
       }, []);
       console.log(justNeighborhoods);
+      var zipArray = justNeighborhoods.map(function(uniqueHood) {
+        var test = modifiedNeighborhoods.reduce(function(acc, next, idx, array) {
+          if (array[idx].neighborhood === uniqueHood) {
+            acc.push(next.zip);
+          }
+          return acc;
+        }, []);
+        console.log(test);
+      });
+      console.log(zipArray);
     });
   };
   getData();
