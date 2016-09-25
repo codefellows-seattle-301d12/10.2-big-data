@@ -12,6 +12,15 @@
         };
       });
       console.log(modifiedNeighborhoods);
+      var justNeighborhoods = modifiedNeighborhoods.map(function(object) {
+        return object.neighborhood;
+      }).reduce(function(acc, next) {
+        if (acc.indexOf(next) === -1) {
+          acc.push(next);
+        }
+        return acc;
+      }, []);
+      console.log(justNeighborhoods);
     });
   };
   getData();
