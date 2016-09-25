@@ -38,6 +38,10 @@
         return b.totalZips.length - a.totalZips.length;
       });
       console.log(sortedArray);
+      var topFive = sortedArray.filter(function(object, idx) {
+        return idx < 5;
+      });
+      console.log(topFive);
     });
   };
   getData();
