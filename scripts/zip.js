@@ -9,6 +9,8 @@
           zip: object.properties.zip,
           neighborhood: object.properties.neighborhood,
           address: object.properties.address,
+          // Since the coordinates are in lng/lat order, and we need them in lat/lng order, reverse the array
+          // we get back by checking object.geometry.coordinates.
           coordinates: object.geometry.coordinates.reverse()
         };
       });
