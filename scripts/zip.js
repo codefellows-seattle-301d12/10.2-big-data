@@ -34,6 +34,10 @@
         };
       });
       console.log(zipArray);
+      var sortedArray = zipArray.sort(function(a, b) {
+        return b.totalZips.length - a.totalZips.length;
+      });
+      console.log(sortedArray);
     });
   };
   getData();
